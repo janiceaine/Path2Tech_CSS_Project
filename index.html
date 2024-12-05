@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="header">
+      <img src="assets/profile_icon.png" alt="profile picture" class="profile_icon" width="100px" height="100px">
+
+      <p class="welcome">Welcome, Janice!</p>
+    </div>
+
+    <button type="submit"> Compose </button>
+
+    <nav>
+      <ul>
+        <li>Inbox (1)</li>
+        <li>Tagged</li>
+        <li>Important</li>
+        <li>Sent Mail</li>
+        <li>Drafts</li>
+        <li>Trash</li>
+      </ul>
+    </nav>
+    
+  </div>
+
+  <div class="email">
+    <h2>Inbox</h2>
+
+    <label for="search">
+      <input type="text" id="search" name="search" placeholder="Search Mail">
+    </label>
+
+    <br>
+
+    <br>
+
+    <div class="email-preview">
+      
+      <div class="email-header">
+        <span class="email-sender">Beyonce Knoweles</span>
+        <span class="email-date">08:44 AM</span>
+      </div>
+      
+      <div class="email-body">
+        Hey Janice, I just wanted to let you know that I am releasing a new album next week. I hope you can make it to the concert. Love, Beyonce
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="email-preview">
+      
+      <div class="email-header">
+        <span class="email-sender">Rihanna Fenty</span>
+        <span class="email-date">11:52 AM</span>
+      </div>
+      
+      <div class="email-body">
+        Hey Janice, I just wanted to let you know that I am releasing a new makeup set next month. I hope you can make it to the premier. Love, Rihanna
+      </div>
+
+      <br>
+
+    </div> 
+    
+    <div class="email-preview">
+      
+      <div class="email-header">
+        <span class="email-sender">Nicki Minaj</span>
+        <span class="email-date">08:44 AM</span>
+      </div>
+      
+      <div class="email-body">
+        Hey Janice, I just wanted to let you know that I am starting my tour. I hope you can make it to the shows. Love, Nicki Minaj
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div class="reply">
+
+    <div class="reply-container">
+
+      <div class="reply-header">
+
+        <h2>Reply</h2>
+
+      </div>
+
+      <fieldset>
+
+      <p><strong>Subject: </strong> Concert</p>
+
+      <div class="message-display">
+        <h3>Sender's Message: </h3>
+        <p><strong>Adele: </strong></p>
+        <p>Hey Janice, I just wanted to let you know that I am making new music. I hope you can make it to the studio. Love, Adele</p>
+      </div>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+      <form class="reply-form" action="#" method="POST">
+
+        <label for="reply-to"><strong>To:</strong></label>
+        <br>
+        <input type="email" id="reply-to" name="reply-to" value="email@example.com" required>
+
+        <br>
+
+        <br>
+
+        <label for="reply-subject"><strong>Subject: </strong></label>
+        <br>
+        <input type="text" id="reply-subject" name="reply-subject" value="Re: Subject" required>
+
+        <br>
+
+        <br>
+
+        <label for="reply-message"><strong>Message: </strong></label>
+        <br>
+        <textarea id="reply-message" name="reply-message" value="Enter Message" rows="10" col="50" required></textarea>
+
+        <br>
+
+        <button type="submit">Send Reply</button>
+      </form>
+    </fieldset>
+    </div>
+
+  </div> 
+
+
+  
+</body>
+</html>
